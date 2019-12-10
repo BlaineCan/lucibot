@@ -13,10 +13,9 @@ import (
 
 var (
 	Token string
+	luciFound bool
+	luciID string
 )
-
-var luciFound bool
-var luciID string
 
 func init() {
 	flag.StringVar(&Token, "t", "", "Bot Token")
